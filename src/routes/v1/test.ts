@@ -24,7 +24,7 @@ router.use('/userssss', graphqlHTTP(async (_req, _res, params) => {
         schema,
         rootValue: root,
         graphiql: true
-    }
+    };
 }));
 
 export default router;

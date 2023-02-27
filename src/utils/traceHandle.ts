@@ -8,4 +8,4 @@ export default (args?: GraphQLParams) => {
         spanId: httpContext.get('spanId'),
         parentSpanId: httpContext.get('parentSpanId')
     }, 'graphql').info(`graphql query:  \n ${args?.query?.replace('\\n', '')}`);
-}
+};
