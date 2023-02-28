@@ -15,7 +15,9 @@ module.exports = {
     extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended'],
     plugins: ['@typescript-eslint'],
     globals: {
-        NodeJS: true
+        NodeJS: true,
+        TypeModel: true,
+        ProductModel: true
     },
     rules: {
         '@typescript-eslint/no-explicit-any': 2,
