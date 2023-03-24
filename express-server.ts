@@ -23,7 +23,7 @@ const port = ((val: string): number => {
 })(getENV('PORT') || '3000');
 
 import http from 'http';
-import app from '@/routes/app';
+import app from '@/express-test/app';
 
 app.set('port', port);
 const server = http.createServer(app);
@@ -115,5 +115,6 @@ server.listen(port, '0.0.0.0', () => {
         }
         clearInterval(_check);
         log('STARTUP').info(`api document running on http://127.0.0.1:${port}.`);
+        log('STARTUP').info(`访问 http://127.0.0.1:${port}/api/v1/itemize 以体验graphql`);
     }, 1000);
 });

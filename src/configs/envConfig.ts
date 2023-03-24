@@ -16,7 +16,7 @@ const developConfig: EnvConfigType = {
     TRACE_LOG_LEVEL: 'all',
     DEV_LOG_LEVEL: 'all',
     AUDIT_LOG_LEVEL: 'all',
-    DB_URL: 'mongodb://localhost:27017/test'
+    DB_URL: 'mongodb://127.0.0.1:27017/test'
 };
 
 export default <K extends keyof EnvConfigType>(env: K): EnvConfigType[K] => {
