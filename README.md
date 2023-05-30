@@ -1,4 +1,7 @@
 # graphql-server
+- 版本
+	nodejs: v18.16.0
+	npm: 9.5.1
 - graphql使用的总结
  	- 使用`express-graphql`（运行`npm run start:express`体验）。可与express项目无缝融合，不影响已有代码，只需在路由代码部分做如下操作：
 		```
